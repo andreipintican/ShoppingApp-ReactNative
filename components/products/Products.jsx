@@ -28,11 +28,12 @@ const Products = () => {
                         return(
                             <TouchableOpacity style={{ flex: 1, }}>
                                 <View style={styles.card}>
-                                    <View>
-                                        <Text>{item.title}</Text>
-                                        {/* <Text>{item.images[0]}</Text> */}
-                                        <Image style={styles.image} source={{ uri: "https://cdn.dummyjson.com/product-images/1/1.jpg"}}/>
-                                    </View>
+                                    <Text>{item.title}</Text>
+                                    {item.images[0] ? (
+                                    <Image style={styles.image} source={{ uri: item.images[0] }} />
+                                ) : (
+                                    <Text>No Image Available</Text>
+                                )}
                                 </View>
                             </TouchableOpacity>
                         )
@@ -59,7 +60,8 @@ const styles = StyleSheet.create({
     },
     image: {
         aspectRatio: 1,
-        resizeMode: "cover"
+        resizeMode: "cover",
+        width: 100
     }
 });
 

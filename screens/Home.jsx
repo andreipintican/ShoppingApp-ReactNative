@@ -22,12 +22,10 @@ const Home = () => {
                 </View>
             </View>
           </View>
-          <ScrollView>
             <Welcome/>
-          </ScrollView>
           <ScrollView style={{marginTop: 10}}>
-                <Products/>
-            </ScrollView>
+            <Products/>
+          </ScrollView>
         </SafeAreaView>
     )
 }

@@ -35,11 +35,6 @@ const navigation = useNavigation();
                         placeholder="What are you looking for ?"
                     />
                 </View>
-                <View>
-                <TouchableOpacity style={styles.searchBtn}>
-                    <Ionicons name="camera-outline" size={SIZES.xLarge} color={COLORS.offwhite}/>
-                </TouchableOpacity>
-            </View>
             </View>
 
         </View>
