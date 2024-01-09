@@ -23,9 +23,9 @@ const Home = () => {
             </View>
           </View>
             <Welcome/>
-          <ScrollView style={{marginTop: 10}}>
+          {/* <ScrollView style={{marginTop: 10}}> */}
             <Products/>
-          </ScrollView>
+          {/* </ScrollView> */}
         </SafeAreaView>
     )
 }

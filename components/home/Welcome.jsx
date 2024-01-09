@@ -4,7 +4,6 @@ import React from "react";
 import { COLORS, SIZES } from "../../constants";
 import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 import { Feather } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons"
 import { useNavigation } from "@react-navigation/native";
 
 const Welcome = () => {
@@ -15,11 +14,7 @@ const navigation = useNavigation();
             <View style={styles.container}>
                 <Text style={styles.welcomeTxt(COLORS.black, SIZES.xSmall)}>
                     {" "}
-                    Find The Most
-                </Text>
-                <Text style={styles.welcomeTxt(COLORS.primary, 0)}>
-                    {" "}
-                    Wanted Product
+                    List Of Products
                 </Text>
             </View>
 
